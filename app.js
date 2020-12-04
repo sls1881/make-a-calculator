@@ -10,6 +10,12 @@ const subtractInput2 = document.getElementById('subtract-input-2');
 const subtractButton = document.getElementById('s-button');
 const subtractResult = document.getElementById('subtract-result');
 
+//multiple calculator variables
+const multipleInput1 = document.getElementById('multiple-input-1');
+const multipleInput2 = document.getElementById('multiple-input-2');
+const multipleButton = document.getElementById('multiple-button');
+const multipleResult = document.getElementById('multiple-result');
+
 // set event listeners, add
 addButton.addEventListener('click', () => {
 
@@ -28,5 +34,15 @@ subtractButton.addEventListener('click', () => {
     const sResult = number3 - number4;
 
     subtractResult.textContent = sResult;
+});
+
+// set event listeners, multiple
+multipleButton.addEventListener('click', () => {
+
+const number5 = Number(multipleInput1.value);
+const number6 = Number(multipleInput2.value);
+const mResult = number5 * number6;
+
+multipleResult.textContent = mResult;
 });
 
